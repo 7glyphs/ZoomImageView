@@ -20,7 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+#if canImport(UIKit)
 
 open class ZoomImageView : UIScrollView, UIScrollViewDelegate {
 
@@ -256,3 +256,4 @@ open class ZoomImageView : UIScrollView, UIScrollViewDelegate {
     return CGPoint(x: contentSize.width * 0.5 + horizontalOffest,  y: contentSize.height * 0.5 + verticalOffset)
   }
 }
+#endif
